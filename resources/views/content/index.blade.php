@@ -20,7 +20,7 @@
             @foreach ($contents as $content)
             <tr>
                 <td>{{$content->id}}</td>
-                <td><a href="/contents/{{$content->id}}">{{$content->title}}</a></td>
+                <td><a href="/contents/{{$content->id}}" class="btn btn-outline-primary btn-sm">{{$content->title}}</a></td>
                 <td>{{$content->description}}</td>
                 <td>
                     <a href="/contents/{{$content->id}}/edit" class="btn btn-warning">Edit</a>

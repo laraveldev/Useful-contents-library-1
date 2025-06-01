@@ -1,8 +1,11 @@
 <?php
 
 namespace Database\Seeders;
+use App\Models\Author;
+use App\Models\Category;
+use App\Models\Content;
+use App\Models\Genre;
 
-use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -13,6 +16,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        //  User::factory(10)->create();
+        Author::factory(2)->create();
+        Category::factory()->count(0)->create();
+        Content::factory(100)->create();
+        Genre::factory(2)->create();
+        
     }
 }

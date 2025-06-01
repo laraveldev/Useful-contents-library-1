@@ -18,9 +18,16 @@
             </div>
         </div>
         <div class="flex items-center space-x-4">
+            @guest
             <a href="/login" class="px-4 py-1 bg-red-600 hover:bg-red-700 text-white rounded-full">
                 Login
             </a>
+            @endguest
+            @auth
+            <a href="/dashboard" class="px-4 py-1 bg-blue-600 hover:bg-blue-700 text-white rounded-full">
+                Dashboard
+            </a>
+            @endauth
         </div>
     </div>
     <div class="container">

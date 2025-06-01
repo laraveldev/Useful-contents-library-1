@@ -17,7 +17,7 @@
             @foreach($genres as $genre)
             <tr>
                 <td>{{ $genre->id }}</td>
-                <td><a href="/genres/{{$genre->id}}">{{ $genre->name }}</a></td>
+                <td><a href="/genres/{{$genre->id}}" class="btn btn-outline-primary btn-sm">{{ $genre->name }}</a></td>
                 <td>
                     <a href="/genres/{{ $genre->id }}/edit" class="btn btn-warning">Edit</a>
                     <form action="/genres/{{ $genre->id }}" method="POST" style="display:inline;" onsubmit="return confirm('Are you sure you want to delete this item?');">

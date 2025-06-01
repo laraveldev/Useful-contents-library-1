@@ -17,7 +17,7 @@
             @foreach($categories as $category)
             <tr>
                 <td>{{ $category->id }}</td>
-                <td><a href="/categories/{{$category->id}}">{{ $category->name }}</a></td>
+                <td><a href="/categories/{{$category->id}}" class="btn btn-outline-primary btn-sm">{{ $category->name }}</a></td>
                 <td>
                     <a href="/categories/{{ $category->id }}/edit" class="btn btn-warning">Edit</a>
                     <form action="/categories/{{ $category->id }}" method="POST" style="display:inline;" onsubmit="return confirm('Are you sure you want to delete this item?');">

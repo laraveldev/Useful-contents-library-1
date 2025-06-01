@@ -18,8 +18,8 @@
             @foreach($authors as $author)
             <tr>
                 <td>{{ $author->id }}</td>
-                <td><a href="authors/{{$author->id}}">{{ $author->name }}</a></td>
-                <td><a href='{{ $author->url }}' target="_blank">link</a></td>
+                <td><a href="authors/{{$author->id}}" class="btn btn-outline-primary btn-sm">{{ $author->name }}</a></td>
+                <td><a href='{{ $author->url }}' target="_blank" class="btn btn-outline-primary btn-sm">link</a></td>
                 <td>
                     <a href="/authors/{{ $author->id }}/edit" class="btn btn-warning">Edit</a>
                     <form action="/authors/{{ $author->id }}" method="POST" style="display:inline;" onsubmit="return confirm('Are you sure you want to delete this item?');">
