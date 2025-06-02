@@ -14,4 +14,6 @@ namespace App\Http\Controllers;
  *     description="Production Server"
  * )
  */
-class SwaggerController {}
+class SwaggerController {
+    //
+}
